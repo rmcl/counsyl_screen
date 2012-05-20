@@ -9,6 +9,7 @@ import logging
 from pygr import worldbase
 
 INPUT_FILE = 'pygr_in.csv'
+OUTPUT_FILE = 'pygr_out.csv'
 
 def read_input(filename):
     '''
@@ -61,13 +62,16 @@ def map2genome(chromosome, start, end):
 
 def main():
     '''Read input from file and print results to stdout.'''
-    global INPUT_FILE
+    global INPUT_FILE, OUTPUT_FILE
 
-    print 'name,sequence,5p_flank,3p_flank'
+    out = open(OUTPUT_FILE, 'w+')
+
+    out.write('name,sequence,5p_flank,3p_flank\n')
     
     for name, chromosome, start, end in read_input(INPUT_FILE):
         result = map2genome(chromosome, start, end)
-        print name+','+','.join(result)
+        out.write(name+','+','.join(result)+'\n')
+    out.close()
 
 if __name__ == '__main__':
     main()
