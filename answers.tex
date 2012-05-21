@@ -1,0 +1,81 @@
+\documentclass[12pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Counsyl Technical Screen}
+\author{Russell McLoughlin}
+\date{May 19th, 2012}                
+
+\begin{document}
+\maketitle
+
+\section{Amino Acids}
+%\subsection{}
+
+There are 22 amino acids which can be represented by three character codes. Because there are so few codes an exhaustive comparison of all combinations to determine single base pair differences seems acceptable.
+
+\section{Da Vyncy Code}
+
+
+
+\section{Pygr Sequence Manipulation}
+
+This question is straightforward; see code in pygr\_csv.py.
+
+\section{Browser Issues}
+
+\subsection{IE Bugs}
+
+
+IE6 doesn't properly support absolute positioning. There are two workarounds; 1) next the div to be absolute positioned in another div and 2) Don't use absolute positioning. Instead uses float:left and clear:both; 
+
+\subsection{Which Browser to Optimize for}
+
+\subsection{Remove Item from the Tab Order}
+
+The order in which form elements are accessed via tab is controlled by the "tabindex" property.\footnote[1]{http://www.w3.org/TR/html4/interact/forms.html\#adef-tabindex}
+
+On some browsers setting the tabindex to a negative value will remove the element from the tab order. This doesn't seem to work on all browsers. Another alternative is to set the value tab index much higher than the rest of the elements on the page, i.e. 500. This will cause that element to appear last in the tab order of the page. A user, tabbing through a form for instance, will likely conclude that the element cannot be reached by tabbing.
+
+\subsection{The Box Model}
+
+
+
+\section{HTML/CSS/JS UI Design}
+
+\subsection{Fitt's Law}
+
+Wikipedia describes Fitt's law as, "predicts that the time required to rapidly move to a target area is a function of the distance to the target and the size of the target. "
+
+Though I have not cited Fitt explicitly the intuition that important elements to be read and clicked on the page should be above the fold and often to the top left of the screen.
+
+\subsection{iTunes Smart Playlist}
+
+See itunes.html.
+
+
+
+
+\section{CSS}
+
+\subsection{Resets}
+
+CSS Resets are often used to get around inconsistencies in default styles in different browsers and have the same basic css properties set irrespective of browser.
+
+\subsection{ID vs Class}
+ CSS id are meant to reference a single unique element of the DOM whereas a CSS class can be specified on multiple elements. Thus if you want to use the same style on multiple elements a class selector would be appropriate.
+
+\subsection{Print Style}
+Assuming you include print.css with something like:
+\begin{verbatim}
+<link rel="stylesheet" href="print.css" type="text/css" media="print" /> 
+\end{verbatim}
+where you set the media property to "print" then it is the stylesheet that is used when printing the document. This allows you to override your primary stylesheet, hiding elements that would be better not to print or simplifying the formatting.
+
+\end{document}  
