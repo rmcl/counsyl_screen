@@ -1,0 +1,857 @@
+ (when she thought it over afterwards, it occurred to 
+nt it was empty: she did not like to drop the jar for fear of killi
+pictures or conversation?'  So she was considering in her o
+, down, down. Would the fall NEVER come to an end! 'I wonder h
+at the time it all seemed quite natural); but when the Rabbit actua
+ouble of getting up and picking the daisies, when suddenly a White Rab
+haracter string S. A trie is a tree structure, where each node r
+ string can be used as an index to quickly locate every occur
+odes traversed. Any finite set of words defines a trie, 
+ Alice had not a moment to think about stoppi
+e schoolroom, and though this wa
+or the hot day made her feel very sleepy and stupid), whether the 
+Alice was beginning to get very tired of sitting by her sis
+ then I wonder what Latitude or 
+fixes of an n-character string S. A trie is a tree structure
+s not a VERY good opportunity for showing off her knowledge, as there
+se of a book,' thought Alice 'without pictures or conversation?'  So she
+ think about stopping herself before
+think it so VERY much out of the way to hear the Rabbit say to itself
+.  Either the well was very deep, or she fell very slowly, for sh
+of suffix trees is quite likely the answer
+es ran close by her.  There was no
+and of having nothing to do: onc
+s the field after it, and fortunately was just in time to 
+he rabbit-hole went straight on like a tunnel 
+nd arrays are phenomenally useful data struc
+ure of making a daisy-chain would be 
+to?' (Alice had no idea what Latitude was, or Longitude either,
+ way, and then dipped suddenly down, so 
+t actually TOOK A WATCH OUT OF ITS WAISTCOAT-POCKET, and looked at it, and
+ the cupboards as she fell past it.  'Well!' thought Alice to herself, 'a
+sidering how in the world she was to get o
+t to think about stopping herself before she found 
+ sister on the bank, and of having nothing to do: once or twice s
+ad no idea what Latitude was, or Longitude either, but thought they wer
+versations in it, 'and what is the use of a book,' thought Alice 'without 
+ocessing algorithm from tex2html_wrap_inline26579 to linear time, p
+ on, Alice started to her feet, for it flashed across her mind tha
+ere filled with cupboards and book-shelves; here and 
+Alice was beginning to get very tired of sitting by her sister on the ban
+ading, but it had no pictures or con
+had never before seen a rabbit with either a waistcoat-p
+fixes will branch off from each other at the first distinguishing character
+len by this time?' she said aloud. 'I must b
+ the schoolroom, and though this was not a VERY go
+d. Any finite set of words defines a trie, and two words
+cupboards as she fell past it.  'Well!
+enly that Alice had not a moment to think about stopping herself befor
+story reported in Section gif. In its simplest instantiati
+ice to herself, 'after such a fall as this, I shall 
+me way, and then dipped suddenly down, so suddenly that Alice had not a m
+ter on the bank, and of having nothing to do: once or twice sh
+ she found herself falling down a very deep well.  Either the well
+when suddenly a White Rabbit with pink eyes ran 
+ctures hung upon pegs. She took down a jar from one of the shelves as
+flashed across her mind that she 
+nly that Alice had not a moment to
+he fall NEVER come to an end! 'I wonder 
+First, she tried to look down and make out what she was coming to, but i
+ at home! Why, I wouldn't say an
+er on the bank, and of having nothin
+ pictures or conversation?'  So she was considering in her own m
+t down went Alice after it, never once conside
+les down, I think--' (for, you see, Alice 
+aw maps and pictures hung upon p
+uddenly a White Rabbit with pink eyes ran close by her.  There was not
+use!' (Which was very likely true.)  Down, down, down. Would the f
+ character, and the root represents 
+had learnt several things of this sort in her lessons in th
+n to look about her and to wonder what
+ was going to happen next. First, sh
+s in it, 'and what is the use of a book,' thought 
+getting somewhere near the centre of the earth. Le
+traight on like a tunnel for some way, and then di
+dering how in the world she was to get out again. 
+the null string. Thus each path from the root represen
+y TOOK A WATCH OUT OF ITS WAISTCOAT-POCKET, and looked at it, and t
+g string problems efficiently and with 
+nd (as well as she could, for the hot day made her
+ fallen by this time?' she said 
+(Which was very likely true.)  Down, down, down. Would the fall NEVER
+and fortunately was just in time to see it pop down a large
+ow brave they'll all think me at home! Why, I wouldn't 
+as there was no one to listen to her, still it was good practic
+ne character, and the root represents the nul
+K A WATCH OUT OF ITS WAISTCOAT-POCKET, and looked at it, and then hurried
+ say anything about it, even if I fell off the top of the ho
+ was too dark to see anything; then she looked at the sides of 
+ring can be used as an index to quickly locate
+ownward!  The suffix array of a string can be used as an index to quickl
+was just in time to see it pop down a large rabbit-hole under the hedge.  I
+hite Rabbit with pink eyes ran close by her.  There was nothing 
+t say anything about it, even if I fell off the top of the house!' 
+ very sleepy and stupid), whether the pleasure of
+that would be four thousand miles down, I think--' (for, you se
+ If you need to speed up a string processing algorithm from 
+ction gif. In its simplest instantiation, a suffix tree is simply a tr
+leaf represents the end of a string. Figure gif illustrates a sim
+e every occurrence.  Suffix trees and arrays are phen
+ structure, where each node repr
+ near the centre of the earth. Let me see: that would be four thousand mi
+A trie is a tree structure, where each node represents
+ and noticed that they were filled with c
+d with elegance. If you need to speed up a string processing alg
+tunity for showing off her knowled
+ one character, and the root repr
+ would be worth the trouble of getting up an
+e had peeped into the book her sister was reading, bu
+he well was very deep, or she fell ver
+it over afterwards, it occurred to her that
+pped suddenly down, so suddenly th
+fter such a fall as this, I shall think nothing of tumbling down stairs! H
+ she fell past it.  'Well!' thought Al
+ across her mind that she had never before seen a rabbit 
+Alice 'without pictures or conversation?'  So she was considering in 
+ at the first distinguishing character. Each 
+ MARMALADE', but to her great disappointment it was empty: she
+ructure, where each node represents one character, and
+ (for, you see, Alice had learnt several thi
+e.  In another moment down went Alice after it, never once con
+g, described by the characters labe
+ went down to look about her and to wonder what was g
+and though this was not a VERY good opp
+say anything about it, even if I fell off the top o
+ look about her and to wonder what was g
+ts a string, described by the characters labeling the n
+ts a string, described by the characters labeling th
+he fall NEVER come to an end! 'I wonder how many miles I've
+ rabbit with either a waistcoat-pocket, or a watch to take out of it, a
+t at the time it all seemed quite natural); bu
+ and make out what she was coming to, but it was too dark to see anythi
+ rabbit-hole under the hedge.  In another moment down went Al
+ WAISTCOAT-POCKET, and looked at it, and then 
+ the centre of the earth. Let me see: that would be four thousand mil
+ee, Alice had learnt several things of this sort in her lessons in
+ Let me see: that would be four thousand miles down, I thi
+nd pictures hung upon pegs. She took down a jar from one of th
+ke out of it, and burning with curiosity
+dark to see anything; then she looked at the si
+ and fortunately was just in time
+o VERY much out of the way to hear
+ngs of this sort in her lessons in the schoolroom, and thoug
+ice had learnt several things of this sort in her l
+d no idea what Latitude was, or Lon
+, 'Oh dear! Oh dear! I shall be late!'
+y slowly, for she had plenty of time 
+l very sleepy and stupid), whether the pleas
+y, for she had plenty of time as she went dow
+st be getting somewhere near the centre of the earth.
+oment to think about stopping herself before she f
+hough this was not a VERY good oppo
+ the Rabbit actually TOOK A WATCH OUT OF ITS WAISTC
+down stairs! How brave they'll all think me at home! Why, I wouldn't s
+boards as she fell past it.  'Well!' thou
+ did not like to drop the jar for fear of killing somebody, so managed
+tex2html_wrap_inline26579 to linear time, proper use of suffix t
+here was no one to listen to her, still it was good practice to
+ wonder how many miles I've fallen by this time?' she sai
+of it, and burning with curiosity, she ra
+ other at the first distinguishing character. Each leaf
+all seemed quite natural); but when
+ the house!' (Which was very likely true.)  Down, do
+ the right distance--but then I wonder what Latitude or Longitude I'v
+lf, 'Oh dear! Oh dear! I shall be late!' (when she thought 
+upboards and book-shelves; here and there she
+ice had no idea what Latitude was, or Longitude eit
+, Alice started to her feet, fo
+ large rabbit-hole under the hedge.  In 
+rence.  Suffix trees and arrays
+ off from each other at the first distinguishing character. Each lea
+she was coming to, but it was too dark to see anything; then she looked
+ered at this, but at the time it all seemed quite natural); but when t
+wonder if I shall fall right THR
+d fortunately was just in time to see it pop down
+d 'ORANGE MARMALADE', but to her great disappointment it was empty: she did
+the cupboards as she fell past it.  'Well!' thought Alice to herself, 'afte
+o hear the Rabbit say to itself, 'Oh dear! Oh dear! I shall be late!' (wh
+erself, 'after such a fall as this, I shall t
+ I shall fall right THROUGH the earth! How funny
+dipped suddenly down, so suddenly th
+had plenty of time as she went down to look about her and to wonder 
+about the right distance--but then I wonder what Latitude or Longitude I
+he people that walk with their head
+look down and make out what she was coming to, but it
+per use of suffix trees is quite likely the answer. Indeed, suffix tre
+r what was going to happen next. First, she tried to look down and 
+y it over) '--yes, that's about the right distance--but then I wonder wh
+helves; here and there she saw maps and pictures hun
+ds, it occurred to her that she ought to have wondered at this, bu
+worth the trouble of getting up and picking the daisies, 
+nk it so VERY much out of the way to hear
+tired of sitting by her sister on the ba
+this, but at the time it all seemed quite natural); but when the Rabbi
+ represents the end of a string. Figure gif illustrates 
+. 'I wonder if I shall fall right THROUGH the
+ntly she began again. 'I wonder if
+considering in her own mind (as well as she could, for the hot 
+ersations in it, 'and what is the u
+nt down went Alice after it, never once considering 
+fell off the top of the house!' (Which was very likely true.)  Down
+, but it was too dark to see anything; t
+wn, down. Would the fall NEVER come to an end! 'I
+ice 'without pictures or conversation?'  So she was consid
+r she fell very slowly, for she had plen
+fter such a fall as this, I shall think nothing of tumbling dow
+F ITS WAISTCOAT-POCKET, and looked at it, and then hurried on,
+rings that are suffixes of an n-character string S. A trie is a 
+hink it so VERY much out of the way to hear
+r such a fall as this, I shall 
+ts the end of a string. Figure gif illustrates a simple trie. 
+tree structure, where each node r
+ss her mind that she had never before seen a rabbit with either a waistc
+egs. She took down a jar from one of the shelves a
+ever once considering how in the worl
+ it, and then hurried on, Alice started to her feet, for it fl
+used as an index to quickly locate every occ
+ was no one to listen to her, still it was go
+h from the root represents a string, 
+g upon pegs. She took down a jar from one of the shelves as she
+for some way, and then dipped suddenly down, so suddenly 
+n like a tunnel for some way, and then dipped suddenly down, so sudde
+Alice was beginning to get very 
+re filled with cupboards and book-shelves; here and
+ a string processing algorithm from tex2h
+ was empty: she did not like to drop the jar for fear of killing somebody, 
+ling the nodes traversed. Any finite set of words defines a trie
+ answer. Indeed, suffix trees are the hero of the war story reported in S
+ds and book-shelves; here and there she saw maps and picture
+oat-pocket, or a watch to take out of it, and burning with curiosity,
+alk with their heads downward!  T
+hing so VERY remarkable in that; nor did Alice t
+st distinguishing character. Each leaf repre
+d with elegance. If you need to speed up a string processin
+ut of the way to hear the Rabbit say to itself,
+nd burning with curiosity, she ran across the field after it, and fortu
+ortunity for showing off her knowledge, as there
+d into the book her sister was reading, but it had no pictures or convers
+t was too dark to see anything; then she looked at the sides of th
+ome to an end! 'I wonder how many miles I've fal
+ to put it into one of the cupboards as she fell past it.
+, she ran across the field after it, 
+fterwards, it occurred to her that she ought to have wond
+as going to happen next. First, she tried to look down
+ she began again. 'I wonder if I sh
+g in her own mind (as well as she could, for the hot day made
+a waistcoat-pocket, or a watch to ta
+ng in her own mind (as well as she could, f
+ over) '--yes, that's about the right d
+went straight on like a tunnel for some way, and then 
+ffix trees is quite likely the answer. Indee
+ds to say.)  Presently she began again. 'I w
+ she went down to look about her and to wonde
+es or conversation?'  So she was considerin
+OAT-POCKET, and looked at it, and then 
+e she found herself falling down a very deep well.  Either t
+r! I shall be late!' (when she thought it over a
+d practice to say it over) '--ye
+er string S. A trie is a tree structure, where each node represents o
+leasure of making a daisy-chain would be worth the trouble of get
+ection gif. In its simplest instantiation, a suffix t
+plest instantiation, a suffix tree is simply a trie of the n stri
+y locate every occurrence.  Suffix trees and
+e had no idea what Latitude was, or Longitude either, but t
+t me see: that would be four thousand miles down, I think--'
+ble in that; nor did Alice think it so VERY much o
+an end! 'I wonder how many miles I've fallen by this time?' sh
+tures for solving string problems efficient
+de either, but thought they were nice gr
+sort in her lessons in the schoolroom, and t
+atural); but when the Rabbit actually TOOK A WATCH OUT OF I
+nt several things of this sort in her lessons in the schoolroom, an
+e, and two words with common pre
+ with common prefixes will branch
+bout her and to wonder what was going to happen next. 
+ced that they were filled with cupboar
+d burning with curiosity, she ran 
+ fallen by this time?' she said aloud. 'I must be getting somewhere
+oing to happen next. First, she tried to look d
+ay anything about it, even if I 
+ashed across her mind that she had never before seen
+elegance. If you need to speed up a string pr
+hurried on, Alice started to her feet, for it flashed ac
+e nice grand words to say.)  Presently she began again. 'I wonde
+on, a suffix tree is simply a trie of the n st
+: once or twice she had peeped into the book her sister was rea
+ the end of a string. Figure gif illustrates a simple trie. 
+, where each node represents one character, and the root r
+he daisies, when suddenly a White Rabbit with pink eyes r
+ somewhere near the centre of the earth. Let me see: 
+, proper use of suffix trees is quite likely t
+ hear the Rabbit say to itself, 'Oh dear! Oh dear! I shall 
+r it flashed across her mind that she had never before seen a
+r solving string problems efficiently and with elegance.
+ficiently and with elegance. If 
+onversation?'  So she was consideri
+wonder what Latitude or Longitude I've got to?' (Alice h
+make out what she was coming to
+n a large rabbit-hole under the hedge.  In anot
+he suffix array of a string can be 
+oing to happen next. First, she tried
+ not like to drop the jar for fear of killing
+ finite set of words defines a trie, and two words with common pre
+ring how in the world she was to get out a
+ feel very sleepy and stupid), whether the pleasure 
+f, 'Oh dear! Oh dear! I shall be
+think nothing of tumbling down stairs! How brave they'll all think me
+all fall right THROUGH the earth! H
+nk, and of having nothing to do: once or twice
+ the trouble of getting up and picking the daisies, when suddenly a White
+ that walk with their heads downwa
+s in it, 'and what is the use of a book,' tho
+in.  The rabbit-hole went straight on like a tunnel for some
+ongitude either, but thought they were nice grand words to say.)  Prese
+two words with common prefixes will branch off from each other
+ simplest instantiation, a suffix tree is sim
+ught Alice 'without pictures or conversation?'  So she was consi
+ery slowly, for she had plenty of time as she went down to
+ents a string, described by the characters labe
+Figure gif illustrates a simple trie. 
+bout stopping herself before she found herself falling down a very dee
+s downward!  The suffix array of a
+cter string S. A trie is a tree st
+ok down and make out what she was coming to, but it was too 
+ of having nothing to do: once or twice she had peepe
+all NEVER come to an end! 'I wonder how many miles I've fallen by this 
+ from each other at the first distinguishing character. 
+reading, but it had no pictures or conv
+lling down a very deep well.  Either t
+, down, down. Would the fall NEVER come to 
+ represents the end of a string. Figure gif illustrates a simple trie. 
+ but thought they were nice grand words to say.)  Presently she began ag
+words to say.)  Presently she began again. 'I wonder if I shall fall right
+at Alice had not a moment to think about stopp
+epresents the null string. Thus each path from the root represents a strin
+ed. Any finite set of words defines a trie, and 
+l string. Thus each path from the root represents a string, described by th
+ain. 'I wonder if I shall fall ri
+as to get out again.  The rabbit-hole went straight on like a tu
+Alice was beginning to get very tired of 
+h either a waistcoat-pocket, or a watch to take 
+ing the daisies, when suddenly a White Rabbit with pink ey
+thing so VERY remarkable in that; nor did Alice 
+ from one of the shelves as she passed; it was labelled 'ORANGE MARMAL
+, I wouldn't say anything about it, even if I fell of
+nce--but then I wonder what Latitude or Longitude I've got to?' (Al
+Either the well was very deep, or she fell v
+OUGH the earth! How funny it'll seem to come out among the people that
+dark to see anything; then she looked at the sides of the well, and noti
+nd what is the use of a book,' thought Alice 'without pictures or c
+how in the world she was to get out aga
+ processing algorithm from tex2html_wrap_inline26579 to linear time, pro
+ somebody, so managed to put it into one of the cupboards as she
+, 'Oh dear! Oh dear! I shall be late!' (when she thought it over a
+own and make out what she was coming to, but it was too dark to 
+dering in her own mind (as well as she could, for the hot day made her
+use!' (Which was very likely true.)  Down, down, down. Would the fal
+he Rabbit actually TOOK A WATCH OUT OF ITS WAISTCOAT-POCKET, and looked at
+upid), whether the pleasure of making a daisy-chain would be worth the tr
+ earth! How funny it'll seem to come out among the people 
+ee is simply a trie of the n strings that are suffixes of an n-c
+nd words to say.)  Presently she began again. 'I wonder if I shall f
+ for fear of killing somebody, so managed to put it into one of the cup
+e tried to look down and make out what 
+ory reported in Section gif. In its simplest instantiat
+her sister was reading, but it had no pictures or conversation
+urning with curiosity, she ran across the field after it, and fortunately 
+Alice was beginning to get very tire
+ndered at this, but at the time it all seemed quite natural); but
+he well was very deep, or she fell very slowly, for she 
+there she saw maps and pictures hung upon p
+s in it, 'and what is the use of a book,' thought Alice 'without pictures o
+nite set of words defines a tri
+Alice was beginning to get very tired of sitting by her sister
+epresents the end of a string. Figure gif illustrates a simple trie. 
+ng. Figure gif illustrates a simple tr
+down and make out what she was coming to, but it was too 
+. Thus each path from the root repres
+character, and the root represents the null string
+another moment down went Alice after i
+ng herself before she found herself fa
+d no idea what Latitude was, or L
+. Indeed, suffix trees are the hero of the war 
+ of killing somebody, so managed to put it into one of
+rees is quite likely the answer. Indeed, suffix trees are t
+pocket, or a watch to take out of it, and b
+very occurrence.  Suffix trees a
+ the Rabbit say to itself, 'Oh dear! Oh dea
+a jar from one of the shelves as she passed;
+d she was to get out again.  The rabbit-hole went s
+her that she ought to have wondered at this, but at the time it al
+rop the jar for fear of killing some
+ords with common prefixes will branch off
+nd with elegance. If you need to speed up a str
+e, Alice had learnt several thin
+ me see: that would be four thousand miles down, I think--' (for, you s
+across the field after it, and fortunat
+world she was to get out again.  The rabbit-hole 
+ then hurried on, Alice started to her feet, for it 
+ting somewhere near the centre of the earth. Let me see: t
+wledge, as there was no one to listen to her, still it was goo
+ it'll seem to come out among the people t
+ge, as there was no one to listen to her, still it was good practice to sa
+day made her feel very sleepy and stupid)
+es are the hero of the war story reported in Section gif. In its sim
+ot represents the null string. Thus each pat
+he hero of the war story reported in Section gif. In i
+ts simplest instantiation, a suffix tree is simply a trie of t
+eaf represents the end of a string. Figure gif illustrates a simple trie. 
+ay.)  Presently she began again. 'I wonder if
+s just in time to see it pop down a large rabbit-hole under
+(Alice had no idea what Latitude was, or Longitu
+se by her.  There was nothing so VERY remarkabl
+gitude either, but thought they were nice gra
+hing about it, even if I fell off the top of the ho
+g algorithm from tex2html_wrap_inline26
+was very deep, or she fell very slowly, for she had plenty of tim
+g about it, even if I fell off the top of t
+it-hole under the hedge.  In another moment d
+ string S. A trie is a tree structure, where each node represents one 
+k it so VERY much out of the way to hear the Rabbit say to itself
+roper use of suffix trees is quite likely the a
+uffix trees and arrays are phenomenally useful d
+uffix trees is quite likely the answer. Indeed, suf
+see it pop down a large rabbit-hole un
+d two words with common prefixes will branch off from each
+ion, a suffix tree is simply a trie of the n strings that are suf
+Longitude I've got to?' (Alice ha
+as she went down to look about her and to wonder what was g
+m from tex2html_wrap_inline26579 to linear time, proper use of su
+ on the bank, and of having nothing 
+k me at home! Why, I wouldn't say any
+e was nothing so VERY remarkable in that; nor did Alice thin
+sed as an index to quickly locate every occurrence.  Suffix trees and ar
+ passed; it was labelled 'ORANGE MARMALADE', but to her great disappointmen
+ Alice started to her feet, for it flashed across her m
+ut among the people that walk with their heads d
+T, and looked at it, and then hurried on
+ng by her sister on the bank, and
+aistcoat-pocket, or a watch to take out 
+g problems efficiently and with elegance. If you need to speed up
+, and two words with common prefixes will bra
+tting up and picking the daisies, wh
+onder if I shall fall right THROUGH the earth! How funn
+e characters labeling the nodes travers
+etting up and picking the daisies, when s
+ every occurrence.  Suffix trees and arrays 
+y it'll seem to come out among the people
+g by her sister on the bank, and of having nothing to do: 
+was just in time to see it pop down a large rabbit-hole under the hedg
+ing, described by the characters labeling the nodes traver
+H OUT OF ITS WAISTCOAT-POCKET, and looked at it, and then hurried on, Al
+d what is the use of a book,' thought Al
+gain.  The rabbit-hole went str
+ she had peeped into the book her sister was reading, but it had no pic
+n stairs! How brave they'll all think me at home! Why, I wouldn'
+ting up and picking the daisies, when suddenly a W
+n stairs! How brave they'll all think me at home! Why, I wouldn't say anyt
+ VERY good opportunity for showing off her 
+ 'Oh dear! Oh dear! I shall be late!' (wh
+g off her knowledge, as there was no one to listen to her, sti
+gitude either, but thought they were nice grand words to s
+ce.  Suffix trees and arrays are phenomen
+ie of the n strings that are suffixes of an n-character string S. 
+od opportunity for showing off her knowledge,
+ed suddenly down, so suddenly that
+pleasure of making a daisy-chain
+me it all seemed quite natural); but when the Rabbit actuall
+ut again.  The rabbit-hole went straight o
+e to say it over) '--yes, that's about the right distanc
+en she thought it over afterwar
+sitting by her sister on the bank, and of having nothing to do
+ saw maps and pictures hung upon pegs. She took down a jar
+sed as an index to quickly locat
+he had peeped into the book her sister was re
+s, that's about the right distance--but then I wonder what Lat
+fell past it.  'Well!' thought Alice to herself, 'after such a fall as th
+fterwards, it occurred to her that she ought to have wondered at 
+to see anything; then she looked at th
+ late!' (when she thought it over afterwards
+e set of words defines a trie, and two w
+ata structures for solving string problems efficiently a
+it, even if I fell off the top of the house
+ common prefixes will branch off from ea
+he answer. Indeed, suffix trees are the hero of the war story reported
+ it was labelled 'ORANGE MARMALA
+hen hurried on, Alice started to h
+ind (as well as she could, for the hot day made her feel very sleepy and st
+e or twice she had peeped into the book her sister was 
+ll it was good practice to say 
+er feet, for it flashed across her m
+ index to quickly locate every occurrence.  Suffix
+f the house!' (Which was very likely t
+, you see, Alice had learnt several things of this 
+suddenly that Alice had not a moment to think a
+e as she went down to look about her and to wonder what w
+ are phenomenally useful data structure
+learnt several things of this sort in her lessons in the schoolroom, and
+tch to take out of it, and burning
+that walk with their heads downward!  The suffix array of a st
+e, proper use of suffix trees is quite likely
+ arrays are phenomenally useful data str
+ the Rabbit say to itself, 'Oh dear! Oh dear! I shall b
+me at home! Why, I wouldn't say anythin
+then hurried on, Alice started to her feet, for it flashed acro
+out of it, and burning with curiosity, she ran across the field after it, 
+presents the end of a string. Figure gif il
+g with curiosity, she ran across the field after it, and fortunately wa
+e had plenty of time as she went down to look about 
+e nodes traversed. Any finite set of words defines a trie, an
+lowly, for she had plenty of time as she went down to look abo
+ the root represents the null string. Thus each path from the root represe
+ice started to her feet, for it flashed
+so VERY remarkable in that; nor did Alice think it so VERY much out of the
+end of a string. Figure gif illustrates a simple trie. 
+w in the world she was to get out again.  The rabbit-hole went
+' thought Alice to herself, 'after such a fa
+--' (for, you see, Alice had lear
+ow many miles I've fallen by this time?' she said aloud. 'I must be 
+MARMALADE', but to her great disappointme
+orithm from tex2html_wrap_inline26579 to linear time, proper use of s
+ent straight on like a tunnel for so
+ound herself falling down a very deep well.  Either the well w
+hot day made her feel very sleepy and stupid), whether the p
+-' (for, you see, Alice had learnt several things of 
+fix trees are the hero of the war story reported in Se
+'ve got to?' (Alice had no idea what Latitude was
+rays are phenomenally useful data st
+e had peeped into the book her siste
+  'Well!' thought Alice to herself, 'a
+t Alice had not a moment to think about stopping hersel
+suffixes of an n-character stri
+hen she looked at the sides of the well, and noticed that they w
+her and to wonder what was going to happen next. First, she tried to 
+nd picking the daisies, when suddenly a White R
+ing, described by the characters labeling the nodes traversed. Any fi
+ of this sort in her lessons in the schoolroom, and though this was 
+ng somebody, so managed to put it into one of 
+xes will branch off from each other at the first distinguishing cha
+ations in it, 'and what is the use of a book,' thought Alice 'without
+, down, down. Would the fall NEVER come
+what was going to happen next. First, she tried to look down 
+e. If you need to speed up a string processing algorith
+e fell past it.  'Well!' thought Alice to herself
+rue.)  Down, down, down. Would t
+ the earth. Let me see: that would be four thousand miles down, I think
+come out among the people that walk with their head
+f represents the end of a string. Figure gif illustr
+time?' she said aloud. 'I must be getting
+ to see it pop down a large rabbit-hole under the hedge.  In another mome
+e!' (Which was very likely true.)  Down, down, down. Would the fall NEVER c
+Alice was beginning to get very tired of sitti
+t when the Rabbit actually TOOK A WATCH OUT O
+an close by her.  There was nothing so VERY remarkable in that; nor did Ali
+e got to?' (Alice had no idea what Latitude was, or Lon
+nately was just in time to see it pop down a large rabb
+ did not like to drop the jar for fear
+room, and though this was not a
+itude or Longitude I've got to?' 
+r conversation?'  So she was considering in her own mi
+killing somebody, so managed to put it into one of the cupboards as
+ The rabbit-hole went straight on like a tunnel for some way,
+aloud. 'I must be getting somewhere near the centre of the earth. Let
+hink nothing of tumbling down stairs! How brave they'll all thin
+egs. She took down a jar from one of the shelves as she passed; it was 
+ing processing algorithm from tex2html_wrap_inline
+esents one character, and the ro
+ she ought to have wondered at this, but at the time it all seemed quite n
+to her that she ought to have wo
+ the Rabbit say to itself, 'Oh 
+acter string S. A trie is a tree stru
+579 to linear time, proper use of suffix trees is quite likely the
+ree is simply a trie of the n strings that are suffixes of an n-charact
+not a VERY good opportunity for showin
+tory reported in Section gif. In its
+r sister was reading, but it had no pictures or conversations in it, 'a
+hurried on, Alice started to her feet, for it flashed 
+, whether the pleasure of making a daisy-chain would be worth
+fixes will branch off from each other at the fir
+that would be four thousand miles down, I think--' (for
+, or Longitude either, but thought they were nice grand 
+. Figure gif illustrates a simple trie. 
+of making a daisy-chain would be worth the trouble of getting up and pick
+ocket, or a watch to take out of 
+lly TOOK A WATCH OUT OF ITS WAISTCOAT-POCKE
+ THROUGH the earth! How funny it'll seem to come out among t
+ally useful data structures for solving string problems efficiently an
+he n strings that are suffixes of an n-char
+think nothing of tumbling down stairs! How brave they'll all think 
+d. 'I must be getting somewhere near the centre o
+!' (Which was very likely true.)  Down, down, down. Would t
+f killing somebody, so managed to put it into one of the cupboards as sh
+e book her sister was reading, but it had no pictures or 
+war story reported in Section gif. In its simplest instantiation, a suffi
+aking a daisy-chain would be worth the tro
+uble of getting up and picking t
+en she thought it over afterwards, it occurred to her that she ought 
+istance--but then I wonder what Latitude or Longitude I've got to?' (Alic
+ I shall fall right THROUGH the earth! How funny
+string can be used as an index to quickly locate every occurrence.  S
+herself falling down a very deep well.  Either the well was very deep, o
+illing somebody, so managed to put it into one of the cupboards as s
+you need to speed up a string processin
+ng S. A trie is a tree structure, where each node represents o
+. Each leaf represents the end of a string. Figure gif ill
+bit with pink eyes ran close by her.  There was no
+ructures for solving string problems ef
+, it occurred to her that she ought to ha
+?' (Alice had no idea what Latitude was, or Longitude either,
+nch off from each other at the first distin
+ straight on like a tunnel for some way, and then dipp
+once or twice she had peeped into the book he
+ards, it occurred to her that she ought to have wondered at this, but 
+esents the null string. Thus each path from the root represents a str
+ it'll seem to come out among the people that w
+d of sitting by her sister on the bank, 
+thing about it, even if I fell off the top of the hous
+ was very deep, or she fell very slowly, for she had plenty of time as
+her own mind (as well as she could, for the hot day made her fee
+e shelves as she passed; it was labelled 'ORANGE
+ with curiosity, she ran across the field after it,
+ve wondered at this, but at the time it 
+guishing character. Each leaf re
+e late!' (when she thought it over afterwards, it occurr
+hall think nothing of tumbling down stairs! How brave they'll al
+ as there was no one to listen to her, still it was good practice to say it
+26579 to linear time, proper use 
+ way to hear the Rabbit say to itsel
+uite likely the answer. Indeed, suffix trees are the hero of the 
+ely was just in time to see it pop dow
+essons in the schoolroom, and though this was not a VERY 
+sents the end of a string. Figure gif illustrates a simple trie. 
+ering in her own mind (as well as she could, for the hot day made her feel
+s she passed; it was labelled 'ORANGE
+ice after it, never once considering how in the world she w
+that Alice had not a moment to think about stopping hersel
+described by the characters labeling the nodes traversed. Any
+t she had never before seen a rabbit with either a wais
+conversations in it, 'and what is the use of a book,
+er great disappointment it was 
+s hung upon pegs. She took down 
+tures or conversations in it, 'an
+presents the end of a string. Figure gif illustrat
+and make out what she was coming to, but it was too dark to see anythin
+r was reading, but it had no pictures or conversation
+d two words with common prefixes will branch off from 
+ a rabbit with either a waistcoat-pocket, or a watch to take out of it, an
+many miles I've fallen by this time?' she said aloud. 'I mu
+e well, and noticed that they were filled with cupboards and book-s
+racter. Each leaf represents the end of a string. Figure gif illu
+her moment down went Alice after it, never once considering how in the 
+then dipped suddenly down, so suddenly tha
+al); but when the Rabbit actually TOO
+ at the sides of the well, and noticed that they were filled with
+ saw maps and pictures hung upon pegs. She took down a j
+hat would be four thousand miles down, I think-
+ointment it was empty: she did not like to drop the jar
+each other at the first distinguishing character. Each leaf re
+ty of time as she went down to look a
+that walk with their heads downward!  The suffix array of a 
+ pink eyes ran close by her.  Ther
+cture, where each node represents one
+nt Alice after it, never once considering how in the w
+own went Alice after it, never once considering ho
+t represents the null string. Thus each path from the root represents a str
+ght Alice to herself, 'after such a fall as this, I s
+e in that; nor did Alice think it s
+ly and with elegance. If you need to speed up a string
+and words to say.)  Presently she began again
+ and then dipped suddenly down, so suddenly that Alice had not a momen
+are phenomenally useful data structures for solvin
+he fell past it.  'Well!' thought Alice to h
+ making a daisy-chain would be worth the trouble of getting up a
+body, so managed to put it into one of the 
+that; nor did Alice think it so VERY much out of the way to
+ing herself before she found herself falling down a very deep well
+this sort in her lessons in the school
+omenally useful data structures fo
+ut her and to wonder what was going to happen next. First, she tried to lo
+od practice to say it over) '--yes, that's 
+he house!' (Which was very likely true.)  Down
+the well, and noticed that they were fil
+ngs that are suffixes of an n-character string S. A trie is a tree
+ Presently she began again. 'I 
+is, I shall think nothing of tumbling 
+across her mind that she had never before seen a rabbit with either a w
+Each leaf represents the end of a stri
+as very deep, or she fell very s
+TS WAISTCOAT-POCKET, and looked at it, and 
+e sides of the well, and noticed that they were filled wit
+ to speed up a string processing algorithm from tex2html_w
+t it had no pictures or conversations in it, 'and wha
+g algorithm from tex2html_wrap_inline26579 to linear time
+f before she found herself falling down a very deep well.  Either the well 
+ht distance--but then I wonder what Latitude or Longitude I've got 
+be late!' (when she thought it over afterwards, it occurred 
+tures for solving string problems efficiently and with eleganc
+ding, but it had no pictures or conversation
+uctures for solving string problems efficiently an
+ce think it so VERY much out of the way t
+rd!  The suffix array of a string can be used as an
+t it was empty: she did not like to drop the jar for fear of 
+all right THROUGH the earth! How funny it'll seem to come o
+ (as well as she could, for the 
+ she passed; it was labelled 'ORANGE MARMALADE', but to her great disapp
+lled with cupboards and book-shelves; here and there she saw maps and pi
+des of the well, and noticed that they we
+ feel very sleepy and stupid), whether the pleasure of making a dais
+ the answer. Indeed, suffix tre
+sed. Any finite set of words defines a trie, and two words with
+own a jar from one of the shelves as she passed; 
+s for solving string problems efficiently and with elegance. If you need
+ MARMALADE', but to her great disappointment it was empty: she did not
+urrence.  Suffix trees and arrays 
+ght THROUGH the earth! How funny it'll seem to come out among the people 
+s downward!  The suffix array of a string can be u
+oing to happen next. First, she tried to look 
+l NEVER come to an end! 'I wonder how many miles I've fal
+path from the root represents a string, described by the charact
+ fell past it.  'Well!' thought Alice to her
+nswer. Indeed, suffix trees are the hero of the war s
+ like to drop the jar for fear of k
+her, but thought they were nice grand words to say.) 
+ was considering in her own mind
+en suddenly a White Rabbit with pink eyes ran clo
+nts a string, described by the characters labeling the nodes traver
+eads downward!  The suffix array of a st
+ers labeling the nodes traverse
+w brave they'll all think me at home! Why, I wouldn't
+till it was good practice to say it over) '--yes, that's about the rig
+o her, still it was good practice to say it 
+it over) '--yes, that's about the right distance--but then I 
+and there she saw maps and pictures hung upon pegs. She took d
+e said aloud. 'I must be getting somewhere near the centre of
+to do: once or twice she had peeped into the book 
+ Rabbit with pink eyes ran close by her. 
+nnel for some way, and then dipped suddenly down, so sudd
+ to look down and make out what she was coming to, but it was too dark 
+ch other at the first distinguishing character. Each leaf represents the 
+dear! Oh dear! I shall be late!' (when she thought it over afterw
+rap_inline26579 to linear time, proper use of suffix trees is q
+abbit with pink eyes ran close by her.  There was nothing so VERY remarka
+r if I shall fall right THROUGH the earth! How funny it'll seem to 
+was very deep, or she fell very slowly, for she had plenty of time as she
+orld she was to get out again.  The rabbit-hole w
+ow funny it'll seem to come out among the people that walk with their h
+y-chain would be worth the trouble of ge
+ng; then she looked at the sides of the well, and noticed that they were fi
+ll as this, I shall think nothing of tumbling down stairs! Ho
+so managed to put it into one of the cupboards as she 
+on gif. In its simplest instantiation, a suffix tr
+ from one of the shelves as she passed; it was labelled 'ORANGE 
+ure of making a daisy-chain would be worth the trouble of g
+knowledge, as there was no one to listen to her, s
+at Latitude or Longitude I've got to
+e--but then I wonder what Latitude or Longitude I've got to?' (Alice ha
+over) '--yes, that's about the right distance--but
+p well.  Either the well was very deep, or she fell very slowl
+good opportunity for showing off her kno
+l seemed quite natural); but when the Rabbit actually TOOK A WATC
+Alice was beginning to get very tired of sittin
+ross her mind that she had never before seen a rabbit wit
+l it was good practice to say it over) '--yes, that's about
+d of a string. Figure gif illustrates a simple trie. 
+gs of this sort in her lessons in the schoolroom, 
+ cupboards and book-shelves; here 
+ though this was not a VERY good opportunity for showing of
+rtunity for showing off her knowledge, 
+es are the hero of the war story reported in Secti
+or showing off her knowledge, as t
+it, and burning with curiosity, she ran acros
+labelled 'ORANGE MARMALADE', but to h
+e is simply a trie of the n strings that are suffixes of an n-chara
+der the hedge.  In another moment down went Alice after it, n
+Alice was beginning to get very tired of sitting by her
+tring. Thus each path from the root represen
+how many miles I've fallen by this time?' she said aloud. 'I must be get
+aight on like a tunnel for some way, and 
+t, never once considering how in the world she was to get out again.  T
+ply a trie of the n strings that are suffixes of an n-character
+g; then she looked at the sides of the well, and noticed that they were fi
+ she ran across the field after it, and fortunately 
+t is the use of a book,' thought Alice 'without pictur
+e getting somewhere near the centre of the earth. Let me see: 
+ed to her that she ought to have wondered at this, but at the ti
+and fortunately was just in time to see it pop down a
+f her knowledge, as there was no one to listen t
+ur thousand miles down, I think--' (for, you see, Al
+it was labelled 'ORANGE MARMALADE', but to her great disappointment it
+close by her.  There was nothing so VERY remarkable in 
+ a large rabbit-hole under the hedge.  In another momen
+ the hedge.  In another moment down we
+empty: she did not like to drop the jar for fear o
+thing so VERY remarkable in that; nor did
+pping herself before she found herself falling down a very deep well.  
+n another moment down went Alice after it, never once consi
+ of tumbling down stairs! How brave they'll all think me at home! Why
+epresents one character, and the roo
+len by this time?' she said alou
+ind that she had never before seen a rabbit with either 
+see anything; then she looked at the sides of the well,
+ her feel very sleepy and stupid), whether the pleasure of m
+hat walk with their heads downward!  The suffix array of a string can be u
+Alice was beginning to get very tired of sitting by her sist
+ when the Rabbit actually TOOK A WATCH OUT OF ITS
+ind that she had never before seen a rabbit with either a waistcoat-
+ring can be used as an index to quickly locate e
+l think me at home! Why, I wouldn't say anything about 
+tcoat-pocket, or a watch to take out of it, and burnin
+h this was not a VERY good opportunity f
+tml_wrap_inline26579 to linear tim
+d aloud. 'I must be getting somewhere near
+ come to an end! 'I wonder how 
+ say it over) '--yes, that's about the right dista
+ADE', but to her great disappointment it was empty: she
+epresents one character, and the root represents the null s
+f the top of the house!' (Which was very likely true.)  Down
+ was no one to listen to her, stil
+ There was nothing so VERY remarkable in that; nor did Alice thi
+self, 'after such a fall as this, I shall think nothing of tumbling dow
+d picking the daisies, when suddenly a White Rabbit with
+ walk with their heads downward!  The suffix array of a string can be
+ in Section gif. In its simplest instantiation, a suffix tre
+x tree is simply a trie of the n strings that are 
+d, suffix trees are the hero of the war st
+at Alice had not a moment to think about sto
+ling the nodes traversed. Any finit
+are phenomenally useful data structures for solving strin
+n across the field after it, an
+ Alice think it so VERY much out of the way to hear the Rabbit say to itse
+with either a waistcoat-pocket, or a wa
+d though this was not a VERY good oppor
+k, and of having nothing to do: once or twice sh
+ but thought they were nice grand words to say.)  Presently
+wn mind (as well as she could, fo
+ used as an index to quickly locate every occurren
+DE', but to her great disappointment it was empty: she did not like to d
+sed. Any finite set of words defines a trie, an
+f before she found herself falling down a very deep well.  Either the well 
+ there she saw maps and pictures hung upon pegs. She took down a jar
+led with cupboards and book-shelves; here and there she s
+f the earth. Let me see: that would be fo
+ to an end! 'I wonder how many miles I've
+hought they were nice grand wor
+ne character, and the root represents the null string. Thus each 
+g to do: once or twice she had peeped into th
+nk--' (for, you see, Alice had 
+' thought Alice 'without pictures or conversation?'  So she was 
+, 'after such a fall as this, I shall think nothing
+lled with cupboards and book-shelves; here and there she
+ything about it, even if I fell off the top of
+r the hot day made her feel very sleepy and stupid), whether the pleas
+h cupboards and book-shelves; here and there she saw maps a
+ trees and arrays are phenomenally useful data struc
+es down, I think--' (for, you see, Alice had learnt several things
+ar from one of the shelves as she passed; it was labelle
+to have wondered at this, but at the time it all seemed quite natur
+and two words with common prefi

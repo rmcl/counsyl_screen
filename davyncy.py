@@ -10,6 +10,7 @@ import os
 import random
 import codecs
 import numpy as np
+import logging
 
 sys.path.append('./lib/pysuffix/')
 import tools_karkkainen_sanders as tks
@@ -43,6 +44,43 @@ def shred_text(source, min_fragment_len, max_fragment_len):
 
     return fragments
 
+def generate_fragments(source_file, output_file = 'davyncy.txt'):
+    '''
+    This method simulate the illuminati tearing up your source text and
+    then the undergraduate creating the fragment file.
+
+    :param source_file: The source file to be shredded
+    :param output_file: The file which fragments will be written to.
+
+    '''
+    # You have 10 copies (9 backups + 1) of the davyncy code.
+    # Shred each copy and mix them up.
+    for i in xrange(10):
+        fragments.extend(shred_text(''.join(open(source,'r').readlines()),
+                         min_fragment_len = 31, max_fragment_len = 75))
+
+    random.shuffle(fragments)
+
+    f = open(output_file, 'w+')
+    for frag in fragments:
+        f.write('%s\n' % (frag))
+    f.close()
+
+def read_fragments(filename):
+    '''
+    Read fragments one per line from a file.
+    
+    This doesn't deal with newline characters within fragments gracefully.
+    :param filename: Fragment file filename.
+    :returns: list of fragments
+    '''
+    frags = open(filename).readlines()
+
+    # We want to remove newline characters at end of line, but not whitespace
+    frags = map(lambda x:x[:-1], frags)
+
+    return frags
+    
 def build_fragment_str(fragments):
     '''Build a string with all of the fragments concatenated together
     
@@ -209,25 +247,19 @@ def assemble(fragments, min_overlap = 10):
 
     # There should be only a single fragment left.
     return fragments.items()[0][1]
-    
-
 
 def main():
     '''
-    Read in a file of fragments, assemble them and write out the assembled
-    result.
+    Read in a file of fragments, assemble them and print out the assembled
+    result to stdout.
     '''
-    # Generate fragments from source text.
-    fragments = []
-    
-    # You have 10 copies (9 backups + 1) of the davyncy code.
-    # Shred each copy and mix them up.
-    for i in xrange(10):
-        fragments.extend(shred_text('\n'.join(codecs.open('davyncy_full.txt','r','utf-8').readlines()),
-                         min_fragment_len = 31, max_fragment_len = 75))
-    
-    random.shuffle(fragments)
-    
+    # Read fragments from source text.
+    try:
+        fragments = read_fragments('davyncy.txt')
+    except IOError:
+        logging.error('Input file does not exist.')
+        sys.exit(1)
+        
     # Convert fragments into dictionary with unique ids
     fragments = dict(enumerate(fragments))
 
