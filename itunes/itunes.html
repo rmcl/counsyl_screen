@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Smart Playlist</title>
+	<meta name="author" content="Russell Mcloughlin">
+	
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css"  charset="utf-8">
+	<link rel="stylesheet" href="css/itunes.css" type="text/css" charset="utf-8">
+		
+	<script src="js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/itunes.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="container">
+	<h1>Smart Playlist</h1>
+	<form id="smartPlaylist" method="post" action="#">
+	<div class="form-row">
+		<input type="checkbox" name="match" checked /> Match
+		<select name="match_type">
+			<option>all</option>
+			<option>any</option>
+		</select>
+		of the following rules:
+	</div>
+	<div class="rules-list">
+		<div class="form-row rule">
+			<select name="search_type">
+				<option selected>Artist</option>
+				<option>Title</option>
+				<option>Genre</option>
+			</select>
+
+			<select>
+				<option selected>contains</option>
+				<option selected>equals</option>
+			</select>
+
+			<input type="text" name="query"/>
+
+			<button class="btn-rm-rules-row" value="remove">-</button>
+			<button class="btn-add-rules-row" value="add">+</button>
+			<button value="dotdotdot">...</button>
+		</div>
+	</div>
+	<div class="form-row">
+		<input type="checkbox" name="limit" /> Limit to <input type="text" name="limit_count" /> 
+		<select name="limit_type">
+			<option selected>items</option>
+		</select>
+		selected by
+		<select name="limit_select_type">
+			<option selected>random</option>
+			<option>alphabetical</option>
+		</select>
+	</div>
+	<div class="form-row">
+		<input type="checkbox" name="match_checked_only" /> Match only checked items
+	</div>
+	<div class="form-row">
+		<input type="checkbox" name="live_update" /> Live updating
+	</div>
+	<div class="form-row submit-row">
+		<input type="submit" name="cancel" value="Cancel">
+		<input type="submit" name="submit" value="OK">
+	</div>
+	</form>
+</div>
+
+</body>
+</html>
