@@ -12,7 +12,7 @@ import unittest
 
 class AminoTest(unittest.TestCase):
 	def test_codon2name(self):
-		pass
+		
 
     
 if __name__ == '__main__':

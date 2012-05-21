@@ -2,9 +2,19 @@
 amino.py - Solution to Problem #1 of Counsyl Screen.
 
 '''
-def load_amino_acids(filename = 'amino.csv'):
-    '''Load a csv file containing amino acids, one per line.'''
-	
+INPUT_FILE='amino.csv'
+
+def load_amino_acids(filename):
+    '''
+	Generator to load a csv file containing amino acids, one per line in
+	the following format:
+			name,codon1,codon2,...
+			
+	:param filename: The filename of the csv file.
+	:type filename: str
+	:return: Iterator of tuples in format (name, codons)
+		where codons in a list of strings.
+    '''
     acids = map(lambda x: x.strip().split(','), open(filename))
 
     for acid in acids:
@@ -23,7 +33,7 @@ def build_codon2name(aa):
 	return codon2name
 	
 def is_single_sub(s1, s2):
-	
+	'''Determine if two strings differ by a single character'''
 	d = [i for i in xrange(len(s1)) if s1[i] != s2[i]]
 	if len(d) > 1:
 		return False
@@ -51,7 +61,8 @@ def build_single_bp_conversion_dict(codon2name):
 	return single_bp_convertable
 
 if __name__ == '__main__':
-	codon2name = build_codon2name(load_amino_acids())
+	global INPUT_FILE
+	codon2name = build_codon2name(load_amino_acids(INPUT_FILE))
 	
 	sbp_conv = build_single_bp_conversion_dict(codon2name)
 			
