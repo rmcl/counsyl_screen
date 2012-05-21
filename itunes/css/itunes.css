@@ -22,3 +22,6 @@ html {
 	background: #ccc;
 	padding:5px;
 }
+.error {
+    border:1px dotted gray;
+}

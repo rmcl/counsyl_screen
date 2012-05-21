@@ -19,8 +19,11 @@
 <div class="container">
 	<h1>Smart Playlist</h1>
 	<form id="smartPlaylist" method="post" action="#">
+	<div class="error" style="display:none;">
+		<span></span><br clear="all"/>
+	</div>
 	<div class="form-row">
-		<input type="checkbox" name="match" checked /> Match
+		<input type="checkbox" name="match" class="match_checked" checked /> Match
 		<select name="match_type">
 			<option>all</option>
 			<option>any</option>
@@ -40,7 +43,7 @@
 				<option selected>equals</option>
 			</select>
 
-			<input type="text" name="query"/>
+			<input type="text" class="match_query" name="match_query"/>
 
 			<button class="btn-rm-rules-row" value="remove">-</button>
 			<button class="btn-add-rules-row" value="add">+</button>
@@ -48,7 +51,7 @@
 		</div>
 	</div>
 	<div class="form-row">
-		<input type="checkbox" name="limit" /> Limit to <input type="text" name="limit_count" /> 
+		<input type="checkbox" name="limit" class="limit_checked" id="limit_to" /> Limit to <input type="text" id="limit_amount" name="limit_count" /> 
 		<select name="limit_type">
 			<option selected>items</option>
 		</select>
