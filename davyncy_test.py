@@ -8,7 +8,7 @@ Author: Russell Mcloughlin (russ.mcl@gmail.com)
 
 import unittest
 import davyncy3
-from davyncy3 import FragmentOverlap
+#from davyncy3 import FragmentOverlap
 
 
 class DavyncyTest(unittest.TestCase):
@@ -23,7 +23,7 @@ class DavyncyTest(unittest.TestCase):
 			res += sample
 		
 		self.assertEqual(len(res),len(inp))
-	'''
+	
 	def test_fragment_overlap_add_frag(self):
 		fo = FragmentOverlap()
 		fo.add_fragment('ABCD', 1)
@@ -37,7 +37,7 @@ class DavyncyTest(unittest.TestCase):
 		fo.add_fragment('EFGHI', 3)
 		
 		print fo.get_pair_largest_overlap()
-	
+	'''
 	def test_calc_overlap(self):
 		tests = """
 		howdy dyno 2 howdyno
@@ -51,6 +51,10 @@ class DavyncyTest(unittest.TestCase):
 		for t in tests:
 			print t[0],t[1]
 			self.assertEquals(davyncy3.calc_overlap(t[0],t[1]),(int(t[2]),t[3]))
+	def test_calc_overlap2(self):
+		t1 = "ity, she ran across the field\n\nafter it, and fortunately was just in ti"
+		t2 =" iosity, she ran across the field\n\nafter it, and fortunately was just in tim"
 		
+		print davyncy3.calc_overlap(t1,t2)
 if __name__ == '__main__':
 	unittest.main()
