@@ -12,7 +12,7 @@ import time
 import heapq
 import numpy as np
 
-sys.path.append('./pysuffix/')
+sys.path.append('./lib/pysuffix/')
 import tools_karkkainen_sanders as tks
 
 def shred_text(source, min_fragment_len, max_fragment_len):
