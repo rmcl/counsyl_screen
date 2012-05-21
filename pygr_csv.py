@@ -1,6 +1,5 @@
 '''
-Counsyl Technical Screen
-Problem #3
+Counsyl Technical Screen- Problem #3
 A program that maps coordinates to the human reference genome via pygr.
 
 Author: Russell McLoughlin (russ.mcl@gmail.com)
@@ -65,19 +64,19 @@ def read_input(filename):
             start, end = int(start), int(end)
             yield name, chromosome, start, end
         except ValueError:
-            logging.warning('invalid input on line %d.' % (i-1))
+            logging.warning('invalid input on line %d.', (i-1))
             
 def main():
     '''Read input from file and print results to stdout.'''
     global INPUT_FILE, OUTPUT_FILE
 
-    map = WorldbaseMapper()
+    mapper = WorldbaseMapper()
     out = open(OUTPUT_FILE, 'w+')
 
     out.write('name,sequence,5p_flank,3p_flank\n')
     
     for name, chromosome, start, end in read_input(INPUT_FILE):
-        result = map.map2genome(chromosome, start, end)
+        result = mapper.map2genome(chromosome, start, end)
         out.write(name+','+','.join(result)+'\n')
     out.close()
 
