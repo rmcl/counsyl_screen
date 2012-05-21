@@ -1,5 +1,5 @@
 \documentclass[12pt]{amsart}
-\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\usepackage[hmarginratio=1:1]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
 \geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
 %\geometry{landscape}                % Activate for for rotated page geometry
 %\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
@@ -7,6 +7,7 @@
 \usepackage{amssymb}
 \usepackage{epstopdf}
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
 
 \title{Counsyl Technical Screen}
 \author{Russell McLoughlin}
@@ -18,67 +19,67 @@
 \section{Amino Acids}
 %\subsection{}
 
-There are 22 amino acids which can be represented by three character codes. Because there are so few codes an exhaustive comparison of all combinations to determine single base pair differences seems acceptable.
+There are 22 amino acids which can be represented by three character codes. Because there are so few codes, an exhaustive comparison of all combinations to determine single base pair differences seems acceptable.
 
 \section{Da Vyncy Code}
 
-The main difficulty is finding pairs of fragments with the maximum overlap. I solved this problem using a suffix array
+The main difficulty is finding pairs of fragments with the maximum overlap. The naive solution of exhaustively comparing overlap of all fragments to find the maximum is $O(n^2)$ and slow even for a small data set. Instead, I solved this problem using a suffix array \footnote[1]{http://en.wikipedia.org/wiki/Suffix\_array}. I used an open source implementation\footnote[2]{http://code.google.com/p/pysuffix/} of the Karkkainen and Sanders algorithm for generating a suffix array in linear time. Full details of my algorithm can be seen from the docstrings and inline comments. 
+
+My implementation would run into trouble in a biological sequence assembly problem due to repeats, alternate splicing, SNPs and because the data set would almost certainly be significantly larger than a single page of text. There are several open source tools I am familiar with that I would try to use first if met with this problem on the job including Zerbino's Velvet which uses an approach based on de Bruijn graphs.\footnote[3]{http://www.ebi.ac.uk/~zerbino/velvet/}
 
 \section{Pygr Sequence Manipulation}
 
-This question is straightforward; see code in pygr\_csv.py.
+See code in pygr\_csv.py.
 
 \section{Browser Issues}
 
 \subsection{IE Bugs}
 
 
-IE6 doesn't properly support absolute positioning. There are two workarounds: 1) nest the div to be absolute positioned within another div and 2) don't use absolute positioning. Instead uses float:left and clear:both;  This bug is not an issue in more recent versions of IE.
+IE6 doesn't properly support absolute positioning. There are two workarounds: 1) nest the div to be absolute positioned within another div and 2) don't use absolute positioning. Instead use a combination of "float:left" and "clear:both; ". This bug is not an issue in more recent versions of IE.
+
 
 \subsection{Which Browser to Optimize for}
 
-I do most of my web development work in Firefox and Chrome because they have the best inspectors (Firebug and Chrome Inspector). If the site is meant for a general audience, I try to test regularly against IE7, Safari running in a virtual machine running windows XP or Windows 7. Like it or not Internet Explorer still has a large market share so its important that it is supported for most applications.
+I do most of my web development work in Firefox and Chrome because they have the best inspectors (Firebug and Chrome Inspector). If the site is meant for a general audience, I try to test regularly against IE7, Safari running in a virtual machine with Windows XP or Windows 7. Like it or not, Internet Explorer still has a large market share so its important that it is well supported for most applications.
 
-I have limited experience writing Selenium unit tests for testing web interfaces.
+I have some experience writing Selenium unit tests for testing web interfaces. There is a firefox plugin which allows the generation of test cases through a graphical interface. Once you have created the tests they operate much like other unit tests except that they require a selenium server be running so it can make requests against a local copy of the web app. It can be a lot of work to keep the tests up to date as the interface evolves. Even minor changes to the DOM can affect the selectors the tests are relying on. 
+
 
 \subsection{Remove Item from the Tab Order}
 
-The order in which form elements are accessed via tab is controlled by the "tabindex" property.\footnote[1]{http://www.w3.org/TR/html4/interact/forms.html\#adef-tabindex}
+The order in which form elements are accessed via tab is controlled by the "tabindex" property.\footnote[4]{$http://www.w3.org/TR/html4/interact/forms.html\#adef-tabindex$}
 
-On some browsers setting the tabindex to a negative value will remove the element from the tab order. This doesn't seem to work on all browsers. Another alternative is to set the value tab index much higher than the rest of the elements on the page, i.e. 500. This will cause that element to appear last in the tab order of the page. A user, tabbing through a form will likely conclude that the element cannot be reached by tabbing although in fact it can if the go through every other element on the page.
+On some browsers setting the tabindex to a negative value will remove the element from the tab order. This does not seem to work on all browsers. Another alternative is to set the value tab index much higher than the rest of the elements on the page, i.e. 500. This will cause the element to appear last in the tab order of the page. A user, tabbing through a form will likely conclude that the element cannot be reached by tabbing although in fact it can if the go through every other element on the page.
 
 \subsection{Nested Divs with Floats}
 
-Adding the float property to the inner div will cause the outer div to not respect the inner div's size. Adding $"clear:both;"$ within the outer div after the nested div will resolve this.
+Adding the float property to the inner div will cause the outer div to not respect the inner div's size. Adding $"clear:both;"$ to another nested div or span within the outer div and after the nested div will resolve this.
 
 
 \subsection{The Box Model}
 
-See diagram here \footnote[2]{http://www.w3schools.com/css/css_boxmodel.asp}. Essentially each HTML element on the page can be considered a box. CSS elements such as borders, padding, and margins are boxes wrapped around HTML element boxes.
+See diagram here \footnote[5]{$http://www.w3schools.com/css/css\_boxmodel.asp$}. Essentially each HTML element on the page can be considered a box. CSS elements such as borders, padding, and margins are boxes wrapped around the HTML element's box. HTML elements nested within another element can be seen as nested boxes.
 
 
 
 \section{HTML/CSS/JS UI Design}
 
-\subsection{Fitt's Law}
-
-Wikipedia describes Fitt's law as, "predicts that the time required to rapidly move to a target area is a function of the distance to the target and the size of the target. "
-
-Though I have not cited Fitt explicitly the intuition that important elements to be read and clicked on the page should be above the fold and often to the top left of the screen.
 
 \subsection{iTunes Smart Playlist}
 
 I used the jQuery validation plugin. The iTunes UI is more interesting than many forms in that some fields are conditionally required based on if the state of checkboxes. To handle this I specified several custom validation methods in itunes.js.
 
-The job listing mention the Counsyl is interested in using the bootstrap component library. I player around with it a bit, but didn't end up using it for this task. I did keep the css because it made my form look more polished.
+The job listing mention the bootstrap component library. I player around with it a bit, but didn't end up using it to create the form elements for this task (It seemed this would prevent my javascript validation from failing gracefully in older browsers). I did keep the css because it made my form look more polished.
 
 \section{CSS}
 
 \subsection{Resets}
 
-CSS Resets are often used to get around inconsistencies in default styles in different browsers and give the developer a common starting point in all browsers by setting many common CSS properties.
+CSS Resets are often used to get around inconsistencies in default styles of different browsers. This gives the developer a common starting point in all browsers by setting many common CSS properties.
 
 \subsection{ID vs Class}
+
 CSS id are meant to reference a single unique element of the DOM whereas a class can be specified on multiple elements. Thus if you want to use the same style on multiple elements a class selector would be appropriate.
 
 \subsection{Print Style}
