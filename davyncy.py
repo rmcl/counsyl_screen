@@ -4,6 +4,11 @@
 davyncy.py - Solution to problem 2 of Counsyl Technical screen.
 
 Russell Mcloughlin on 2012-05-18.
+
+To generate the fragment file you can do:
+    ipython>>import davyncy
+    ipython>>davyncy.generate_fragments('input_file','davyncy.txt')
+
 """
 import sys
 import os
@@ -221,8 +226,22 @@ def assemble(fragments, min_overlap = 10):
 
     max_id = len(fragments)
     
+    no_prog_count = 0
+    last_len = -1
     # Loop until only a single fragment remains
     while len(fragments) > 1:
+        # If the number of fragments does not change check to make sure we
+        # are still making progress
+        if last_len == len(fragments):
+            no_prog_count += 1
+            # We aren't making progress assembly may have failed.
+            if no_prog_count > 10:
+                logging.error('''Assemble failed''')
+                logging.error('- Fragments do not overlap enough to perform complete assembly!')
+                sys.exit(1)
+        else:
+            no_prog_count = 0
+        last_len = len(fragments)
         for frag_id in fragments.keys():
             if len(fragments[frag_id]) < min_overlap:
                 del fragments[frag_id]
