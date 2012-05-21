@@ -22,7 +22,7 @@ There are 22 amino acids which can be represented by three character codes. Beca
 
 \section{Da Vyncy Code}
 
-
+The main difficulty is finding pairs of fragments with the maximum overlap. I solved this problem using a suffix array
 
 \section{Pygr Sequence Manipulation}
 
@@ -33,17 +33,28 @@ This question is straightforward; see code in pygr\_csv.py.
 \subsection{IE Bugs}
 
 
-IE6 doesn't properly support absolute positioning. There are two workarounds; 1) next the div to be absolute positioned in another div and 2) Don't use absolute positioning. Instead uses float:left and clear:both; 
+IE6 doesn't properly support absolute positioning. There are two workarounds: 1) nest the div to be absolute positioned within another div and 2) don't use absolute positioning. Instead uses float:left and clear:both;  This bug is not an issue in more recent versions of IE.
 
 \subsection{Which Browser to Optimize for}
+
+I do most of my web development work in Firefox and Chrome because they have the best inspectors (Firebug and Chrome Inspector). If the site is meant for a general audience, I try to test regularly against IE7, Safari running in a virtual machine running windows XP or Windows 7. Like it or not Internet Explorer still has a large market share so its important that it is supported for most applications.
+
+I have limited experience writing Selenium unit tests for testing web interfaces.
 
 \subsection{Remove Item from the Tab Order}
 
 The order in which form elements are accessed via tab is controlled by the "tabindex" property.\footnote[1]{http://www.w3.org/TR/html4/interact/forms.html\#adef-tabindex}
 
-On some browsers setting the tabindex to a negative value will remove the element from the tab order. This doesn't seem to work on all browsers. Another alternative is to set the value tab index much higher than the rest of the elements on the page, i.e. 500. This will cause that element to appear last in the tab order of the page. A user, tabbing through a form for instance, will likely conclude that the element cannot be reached by tabbing.
+On some browsers setting the tabindex to a negative value will remove the element from the tab order. This doesn't seem to work on all browsers. Another alternative is to set the value tab index much higher than the rest of the elements on the page, i.e. 500. This will cause that element to appear last in the tab order of the page. A user, tabbing through a form will likely conclude that the element cannot be reached by tabbing although in fact it can if the go through every other element on the page.
+
+\subsection{Nested Divs with Floats}
+
+Adding the float property to the inner div will cause the outer div to not respect the inner div's size. Adding $"clear:both;"$ within the outer div after the nested div will resolve this.
+
 
 \subsection{The Box Model}
+
+See diagram here \footnote[2]{http://www.w3schools.com/css/css_boxmodel.asp}. Essentially each HTML element on the page can be considered a box. CSS elements such as borders, padding, and margins are boxes wrapped around HTML element boxes.
 
 
 
@@ -57,19 +68,18 @@ Though I have not cited Fitt explicitly the intuition that important elements to
 
 \subsection{iTunes Smart Playlist}
 
-See itunes.html.
+I used the jQuery validation plugin. The iTunes UI is more interesting than many forms in that some fields are conditionally required based on if the state of checkboxes. To handle this I specified several custom validation methods in itunes.js.
 
-
-
+The job listing mention the Counsyl is interested in using the bootstrap component library. I player around with it a bit, but didn't end up using it for this task. I did keep the css because it made my form look more polished.
 
 \section{CSS}
 
 \subsection{Resets}
 
-CSS Resets are often used to get around inconsistencies in default styles in different browsers and have the same basic css properties set irrespective of browser.
+CSS Resets are often used to get around inconsistencies in default styles in different browsers and give the developer a common starting point in all browsers by setting many common CSS properties.
 
 \subsection{ID vs Class}
- CSS id are meant to reference a single unique element of the DOM whereas a CSS class can be specified on multiple elements. Thus if you want to use the same style on multiple elements a class selector would be appropriate.
+CSS id are meant to reference a single unique element of the DOM whereas a class can be specified on multiple elements. Thus if you want to use the same style on multiple elements a class selector would be appropriate.
 
 \subsection{Print Style}
 Assuming you include print.css with something like:
