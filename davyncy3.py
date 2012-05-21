@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-davyncy2.py
+davyncy.py 
 
 Russell Mcloughlin on 2012-05-18.
 
@@ -12,8 +12,12 @@ import os
 import random
 import time
 import heapq
+import numpy as np
 
-def shred_text(source, min_fragment_len = 35, max_fragment_len = 50):
+sys.path.append('./pysuffix/')
+import tools_karkkainen_sanders as tks
+
+def shred_text(source, min_fragment_len, max_fragment_len):
     '''
     Break a string into many fragments of length between a min and max.
     This simulates the illuminati's part in the story.
@@ -41,10 +45,11 @@ def shred_text(source, min_fragment_len = 35, max_fragment_len = 50):
 def calc_overlap(a, b, min_overlap = 1):
     '''
     Calculate the overlap between two strings assuming one of four cases:
-        1. a is a prefix of b
-        2. b is a prefix of a
-        3. a is a substring of b
-        4. b is a substring of a
+        1. a is a substring of b
+        2. b is a substring of a
+        3. a is a prefix of b
+        4. b is a prefix of a
+
         
     If the overlap is less than the min overlap length then return no overlap.
     
@@ -57,6 +62,15 @@ def calc_overlap(a, b, min_overlap = 1):
     :return tuple of int containing amount of overlap and string containing the
         overlaping string.
     '''
+    #check for complete overlap (cases 1 & 2)
+    if a.find(b) >= 0:
+        return len(a), a
+    elif b.find(a) >= 0:
+        return len(b), b
+    elif a == b:
+        return len(a), a
+    
+    # Check if b is a prefix of a
     maxn = 0
     for n in xrange(1, 1 + min(len(a), len(b))):
         suffix = a[-n:]
@@ -66,6 +80,7 @@ def calc_overlap(a, b, min_overlap = 1):
     if maxn >= min_overlap:
         return maxn, a + b[maxn:]
     else:
+        # Check if b is a prefix of a
         for n in xrange(1, 1 + min(len(b), len(a))):
             suffix = b[-n:]
             prefix = a[:n]
@@ -75,110 +90,97 @@ def calc_overlap(a, b, min_overlap = 1):
     if maxn >= min_overlap:
         return maxn, b + a[maxn:]
 
-    #check for complete overlap
-    if a.find(b) >= 0:
-        return len(b), a
-    elif b.find(a) >= 0:
-        return len(a), b
-
     return 0, ''
 
-class FragmentOverlap(object):
-    def __init__(self, fragments = None):
-        self.fragments = {}
-        self.distance = []
 
-        tmp_distance = {}
-        if fragments is not None:
-            for frag_id, frag in fragments.items():
-                for xnum, xfrag in self.fragments.iteritems():
-                    sid, bid = min(frag_id, xnum), max(frag_id, xnum)
-                    if sid == bid or (sid, bid) in tmp_distance:
-                        continue
+def build_fragment_str(fragments):
+    '''build a string with all of the fragments concatenated together'''
+    concat = ''
+    cur_pos = 0
+    for frag_id, frag in fragments.iteritems():
+        label = '%s$$$%d!!!' % (frag,frag_id)
+        concat += label
+        cur_pos += len(frag) + len(label)
 
-                    overlap_count, combined = calc_overlap(xfrag, frag, 1)
-                    tmp_distance[(sid,bid)] = (1e9 - overlap_count, combined)
-
-                self.fragments[frag_id] = frag
-
-        self.distance = map(lambda x: (x[1][0], x[0], x[1][1]), tmp_distance.items())
-        heapq.heapify(self.distance)
-        print 'done adding frags'
+    return concat
     
-    def add_fragment(self, frag, frag_id):   
-        for xnum, xfrag in self.fragments.iteritems():
-            sid, bid = min(frag_id, xnum), max(frag_id, xnum)
-            if sid == bid:
-                continue
+def get_pair_longest_overlap(fragments, min_overlap):
+    concat = build_fragment_str(fragments)
+
+    s = concat
+    sa = tks.simple_kark_sort(concat)
+    lcp = tks.LCP(concat,sa)
+    sorted_lcp = sorted(enumerate(lcp),key=lambda x:x[1], reverse=True)
+    
+    max_lcp_pos = -1
+    count = 0
+    
+    for max_lcp_pos, max_lcp_val in sorted_lcp:
+        count += 1
+
+        if max_lcp_pos < min_overlap:
+            break
+
+        labels = []
+        cur_lcp_pos = max_lcp_pos
+        while len(labels) < 2:
+            label_start = s.find('$$$', sa[cur_lcp_pos]) + 3
+            label_end = s.find('!!!', label_start)
+
+            label = int(s[label_start: label_end])
+    
+            labels.append(label)
+            cur_lcp_pos += 1
         
-            overlap_count, combined = calc_overlap(xfrag, frag, 1)
-            heapq.heappush(self.distance, (1e9 - overlap_count, (sid,bid), combined))
-            
-        self.fragments[frag_id] = frag
+        if labels[0] == labels[1]:
+            continue
 
-    def rm_fragment(self, frag_id):
-        del self.fragments[frag_id]
-        
-
-    def get_pair_largest_overlap(self):
-        while len(self.distance) > 0:
-            overlap_len, (frag1, frag2), combined = heapq.heappop(self.distance)
-            overlap_len = (overlap_len - 1e9) * -1
-
-            if frag1 not in self.fragments or frag2 not in self.fragments:
-                continue
-
-            self.rm_fragment(frag1)
-            self.rm_fragment(frag2)
-            #print frag1, frag2, overlap_len, combined
-            return frag1, frag2, overlap_len, combined
-
-    def num_fragments(self):
-        return len(self.fragments)
-
-def assemble(fragments):
+        yield labels[0], labels[1]
+    
+    
+def assemble(fragments, min_overlap = 10):
     '''Given a list of fragments, combine them into a single fragment.'''
-    
-    fo = FragmentOverlap(fragments)
-    
-    print 'done adding fragments'
 
-    max_id = fo.num_fragments()
-    while fo.num_fragments() > 1:
-        print 'number of fragments', fo.num_fragments()
-        frag1_id, frag2_id, overlap_len, combined = fo.get_pair_largest_overlap()
-        
-        # If the two fragments don't overlap then don't use their combination
-        if overlap_len <= 0:
-            raise Exception, 'returned two fragments with no overlap-bad!'
+    max_id = len(fragments)
+    while len(fragments) > 1:
 
-        fo.add_fragment(combined, max_id)
-        max_id += 1
+        for frag_id in fragments.keys():
+            if len(fragments[frag_id]) < min_overlap:
+                del fragments[frag_id]
 
-    return fo.fragments
+        for frag1_id, frag2_id in get_pair_longest_overlap(fragments, min_overlap):
+            
     
+            if frag1_id not in fragments or frag2_id not in fragments:
+                continue
+
+            overlap_len, combined = calc_overlap(fragments[frag1_id], fragments[frag2_id])
+                        
+            # If the two fragments don't overlap then don't use their combination
+            if overlap_len < min_overlap:
+                continue
+
+            del fragments[frag1_id]
+            del fragments[frag2_id]
+            fragments[max_id] = combined
+            max_id += 1
+
+    return fragments.items()[0][1]
+
 
 def main():
-    min_overlap = 11
 
     # Generate fragments from source text.
     fragments = []
     for i in xrange(10):
-        fragments.extend(shred_text('\n'.join(open('davyncy_source.txt').readlines())))
+        fragments.extend(shred_text('\n'.join(open('davyncy_source.txt').readlines()),
+                         min_fragment_len = 31, max_fragment_len = 75))
 
-    # remove fragments shorter than min length
-    fragments = filter(lambda x: len(x) > min_overlap, fragments)
-    
-    f = open('davyncy_source_frags.txt', 'w+')
-    for frag in fragments:
-        f.write("'''"+frag+"'''\n")
-    f.close()
-    
     fragments = dict(enumerate(fragments))
 
-    fragments = assemble(fragments)
+    fragment = assemble(fragments)
 
-    print fragments.items()[0][1]
+    print fragment
 
 if __name__ == '__main__':
     main()
