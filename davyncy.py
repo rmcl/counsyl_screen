@@ -8,8 +8,7 @@ Russell Mcloughlin on 2012-05-18.
 import sys
 import os
 import random
-import time
-import heapq
+import codecs
 import numpy as np
 
 sys.path.append('./lib/pysuffix/')
@@ -32,7 +31,11 @@ def shred_text(source, min_fragment_len, max_fragment_len):
     # and maximum fragment length.
     while cur_pos < src_len:
         frag_len = random.randint(min_fragment_len, max_fragment_len)
-        fragments.append(source[cur_pos:cur_pos+frag_len])
+        if src_len - cur_pos > min_fragment_len:
+            fragments.append(source[cur_pos:cur_pos+frag_len])
+        else:
+            fragments.append(source[-frag_len:])
+        
         cur_pos += frag_len
 
     # mix up the fragments
@@ -97,7 +100,12 @@ def get_pair_longest_overlap(fragments, min_overlap):
         labels = []
         while len(labels) < 2:
             # Labels are integers prefixed with "$$$" and followed by "!!!"
-            label_start = concat_frags.find('$$$', sa[cur_lcp_pos]) + 3
+            label_start = concat_frags.find('$$$', sa[cur_lcp_pos])
+            
+            if label_start < 0:
+                break
+                
+            label_start += 3
             label_end = concat_frags.find('!!!', label_start)
 
             # Extract the label and convert from string to int
@@ -108,7 +116,7 @@ def get_pair_longest_overlap(fragments, min_overlap):
         
         # If the two entries in the suffix array come from the same fragment
         # then go to the next highest LCP entry.
-        if labels[0] == labels[1]:
+        if len(labels) < 2 or labels[0] == labels[1]:
             continue
 
         yield labels[0], labels[1]
@@ -135,9 +143,9 @@ def calc_overlap(a, b, min_overlap = 1):
     '''
     #check for complete overlap (cases 1 & 2)
     if a.find(b) >= 0:
-        return len(a), a
+        return len(b), a
     elif b.find(a) >= 0:
-        return len(b), b
+        return len(a), b
     elif a == b:
         return len(a), a
 
@@ -208,15 +216,18 @@ def main():
     '''
     Read in a file of fragments, assemble them and write out the assembled
     result.
-    
-    
     '''
-    
     # Generate fragments from source text.
     fragments = []
+    
+    # You have 10 copies (9 backups + 1) of the davyncy code.
+    # Shred each copy and mix them up.
     for i in xrange(10):
-        fragments.extend(shred_text('\n'.join(open('davyncy.txt').readlines()),
+        fragments.extend(shred_text('\n'.join(codecs.open('davyncy_full.txt','r','utf-8').readlines()),
                          min_fragment_len = 31, max_fragment_len = 75))
+    
+    random.shuffle(fragments)
+    
     # Convert fragments into dictionary with unique ids
     fragments = dict(enumerate(fragments))
 
