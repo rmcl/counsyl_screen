@@ -11,7 +11,10 @@ import unittest
 import amino
 
 class AminoTest(unittest.TestCase):
+    '''Test cases for amino.py'''
+    
     def test_is_single_sub(self):
+        '''Test single sub method output.'''
         tests = """
         russell rassell
         bob bab
@@ -22,8 +25,9 @@ class AminoTest(unittest.TestCase):
         
         truth = [True, True, False, True]
         
-        for t in xrange(len(tests)):
-            self.assertEquals(amino.is_single_sub(tests[t][0],tests[t][1]),bool(truth[t]))
+        for tid in xrange(len(tests)):
+            self.assertEquals(amino.is_single_sub(tests[tid][0], tests[tid][1]),
+                              bool(truth[tid]))
     
 if __name__ == '__main__':
     unittest.main()

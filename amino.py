@@ -21,12 +21,12 @@ def load_amino_acids(filename):
         name = acid[0].strip()
         codons = map(lambda x:x.strip(), acid[1:])
 
-        for c in codons:
-            codon2name[c] = name
+        for codon in codons:
+            codon2name[codon] = name
             
     return codon2name
 
-def is_single_sub(s1, s2):
+def is_single_sub(str1, str2):
     '''Determine if two strings differ by a single character
     
     :param s1: The first string.
@@ -35,8 +35,8 @@ def is_single_sub(s1, s2):
     :type s1: str
     :returns: bool
     '''
-    d = [i for i in xrange(len(s1)) if s1[i] != s2[i]]
-    if len(d) != 1:
+    dist = [i for i in xrange(len(str1)) if str1[i] != str2[i]]
+    if len(dist) != 1:
         return False
     return True 
 
@@ -53,7 +53,10 @@ def build_single_bp_conversion_dict(codon2name):
     
     for codon_a in codon2name.keys():
         for codon_b in codon2name.keys():
+            
+            # Check if this pair of codons differs by a single bp.
             if is_single_sub(codon_a, codon_b):
+                # It does so look up it's name and add it to dictionary.
                 a_name = codon2name[codon_a]
                 b_name = codon2name[codon_b]
 
@@ -79,7 +82,7 @@ def main():
     
     sbp_conv = build_single_bp_conversion_dict(codon2name)
             
-    for src,trgs in sbp_conv.iteritems():
+    for src, trgs in sbp_conv.iteritems():
         trg = ','.join(trgs)
         print '%s: %s' % (src, trg)
 
