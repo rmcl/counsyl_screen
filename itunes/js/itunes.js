@@ -19,28 +19,38 @@ $().ready(function() {
         return false;
     };
 
-    jQuery.validator.addMethod("match_checked", function(value, element) {
+    jQuery.validator.addMethod("test_match", function(value, element) {
+
         if ($(element).is(":checked")) {
                 var matched = true;
-                $('.match_query').each(function(elem) {
+                
+                $('.match_query').each(function(index, elem) {
                     if (!$(elem).is(":filled")) {
                         matched = false;
+                        $(elem).css('border','1px solid red');
+                    } else {
+                        $(elem).css('border','none');
                     }
                 });
                 return matched;
-        }
+        }  
         return true;
         
     }, "You have checked match so you must enter at least one query.");
 
-
     jQuery.validator.addMethod("limit_checked", function(value, element) {
-        if ($("#limit_to").is(":checked")) {
-                if ($("#limit_amount").is(":filled")) {
+        var la = $("#limit_amount");
+        if ($("#limit_to").is(":checked")) {     
+                re = /^[0-9]+$/;
+               
+                if (la.is(":filled") && re.test(la.val())) {
                     return true;
+                    la.css('border','none');
                 }
+                la.css('border','1px solid red');
                 return false;
         }
+        la.css('border','none');
         return true;
     }, "You have checked limit to but not entered a number!");
 
@@ -59,6 +69,7 @@ $().ready(function() {
         },
         submitHandler: function(form) {
            alert("validated!");
+           
            form.submit();
         }
     });
